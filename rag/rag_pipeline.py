@@ -1,7 +1,3 @@
-# rag/rag_pipeline.py
-# This file handles loading documents, creating embeddings,
-# storing in ChromaDB, and retrieving relevant chunks
-
 import os
 import chromadb
 from chromadb.utils import embedding_functions

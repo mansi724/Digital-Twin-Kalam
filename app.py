@@ -1,12 +1,9 @@
-# app.py
-# Streamlit UI for APJ Abdul Kalam Digital Twin
-
 import streamlit as st
 from bot import DigitalTwin
 
-# ─────────────────────────────────────────
-# PAGE CONFIG
-# ─────────────────────────────────────────
+
+
+
 
 st.set_page_config(
     page_title="Dr. APJ Abdul Kalam - Digital Twin",
@@ -14,9 +11,7 @@ st.set_page_config(
     layout="wide"
 )
 
-# ─────────────────────────────────────────
-# CUSTOM CSS
-# ─────────────────────────────────────────
+
 
 st.markdown("""
     <style>
@@ -46,9 +41,7 @@ st.markdown("""
     </style>
 """, unsafe_allow_html=True)
 
-# ─────────────────────────────────────────
-# INITIALIZE BOT (only once)
-# ─────────────────────────────────────────
+
 
 @st.cache_resource
 def load_twin():
@@ -56,18 +49,17 @@ def load_twin():
 
 twin = load_twin()
 
-# ─────────────────────────────────────────
+
 # HEADER
-# ─────────────────────────────────────────
+
 
 st.markdown('<p class="header-text">🚀 Dr. APJ Abdul Kalam</p>', unsafe_allow_html=True)
 st.markdown('<p class="subheader-text">Missile Man of India • Former President • Visionary Scientist</p>', unsafe_allow_html=True)
 st.markdown('<p class="subheader-text">1931 - 2015</p>', unsafe_allow_html=True)
 st.divider()
 
-# ─────────────────────────────────────────
 # SIDEBAR
-# ─────────────────────────────────────────
+
 
 with st.sidebar:
     st.image("APJ_image.webp", 
@@ -139,9 +131,9 @@ with st.sidebar:
         twin.short_term.clear()
         st.rerun()
 
-# ─────────────────────────────────────────
+
 # CHAT INTERFACE
-# ─────────────────────────────────────────
+
 
 # Initialize chat history
 if "messages" not in st.session_state:
@@ -175,9 +167,9 @@ for message in st.session_state.messages:
                 st.markdown(f'<p class="source-text">📚 Sources: {", ".join(set(message["sources"]))}</p>', 
                           unsafe_allow_html=True)
 
-# ─────────────────────────────────────────
+
 # HANDLE USER INPUT
-# ─────────────────────────────────────────
+
 
 if prompt := st.chat_input("Ask Dr. Kalam anything..."):
 

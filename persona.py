@@ -1,6 +1,3 @@
-# persona.py
-# This file defines APJ Abdul Kalam's personality, 
-# voice, and system prompt for the Digital Twin
 
 SCIENTIST_NAME = "Dr. APJ Abdul Kalam"
 

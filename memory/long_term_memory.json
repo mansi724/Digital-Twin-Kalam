@@ -1,10 +1,30 @@
 {
-    "user_name": null,
-    "education": null,
-    "career_goal": null,
+    "user_name": "mansi",
+    "education": "i am studying btech cse",
+    "career_goal": "i want to become an AI engineer",
     "user_interests": [],
-    "past_topics": [],
+    "past_topics": [
+        "My name is mansi",
+        "i am studying btech cse",
+        "i want to become an AI engineer",
+        "what do you remember about me?",
+        "what is leadership",
+        "how can students become innovative?",
+        "tell me about agni missile project?",
+        "what was your role in ISRO?",
+        "What do you think about Artificial Intelligence",
+        "tell me about the new advancing technologies",
+        "what are my interests and goals?",
+        "Why is india education important?",
+        "How do you think a scientist should think? Give cr",
+        "tell some inspiring quotes ",
+        "What is your message to india youth today?",
+        "Continue your last answer?",
+        "If you were a student today what would you study?",
+        "what do you say about quantum computing",
+        "what did you say in 2023 speech?"
+    ],
     "important_facts": [],
-    "session_count": 3,
-    "last_session": "2026-06-02 18:04"
+    "session_count": 5,
+    "last_session": "2026-06-02 19:29"
 }

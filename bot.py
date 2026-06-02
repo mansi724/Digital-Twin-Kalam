@@ -1,7 +1,3 @@
-# bot.py
-# Main brain of the Digital Twin
-# Connects RAG + Memory + Persona + Gemini together
-
 from google import genai
 from dotenv import load_dotenv
 import os
@@ -10,16 +6,14 @@ from persona import get_system_prompt, get_timeline
 from rag.rag_pipeline import initialize_rag, retrieve_relevant_chunks
 from memory.memory import ShortTermMemory, LongTermMemory
 
-# ─────────────────────────────────────────
-# SETUP
-# ─────────────────────────────────────────
+
+
+
 
 load_dotenv()
 client = genai.Client(api_key=os.getenv("GEMINI_API_KEY"))
 
-# ─────────────────────────────────────────
-# DIGITAL TWIN CLASS
-# ─────────────────────────────────────────
+
 
 class DigitalTwin:
 
