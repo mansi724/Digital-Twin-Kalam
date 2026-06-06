@@ -6,3 +6,7 @@ python-dotenv
 edge-tts
 pypdf
 streamlit
+pyvis
+plotly 
+scikit-learn 
+umap-learn
